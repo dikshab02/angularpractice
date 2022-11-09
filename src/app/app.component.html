@@ -1,17 +1,9 @@
-<div class = "container">
-  <div class = "header">
-    <nav>
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-    </nav>
-  </div>
+<div class = "container" [ngClass]="themeClass">
+  <app-header></app-header>
  <div class="content">
     <router-outlet></router-outlet>
+
 </div>
 
-<div class = "footer">
-  <h1>
-    This is Footer
-  </h1>
-</div>
+<app-footer></app-footer>
 </div>

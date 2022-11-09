@@ -1,0 +1,7 @@
+<p>theme works!</p>
+<ng-container *ngFor="let item of this.themeService.listThemes">
+  <div class="square-container">
+    <div class="square" [ngStyle]="{'background-color': item.key}"></div>
+    <button (click)="colorTheme(item)">{{ item.value }}</button>
+  </div>
+</ng-container>
